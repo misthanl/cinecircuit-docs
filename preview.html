@@ -1,7 +1,7 @@
 <!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CineCircuit 图文使用指南</title><style>
 :root{color-scheme:light;--ink:#183247;--muted:#60788b;--line:#dfe7ed}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:28px}body{margin:0;background:#f4f7fa;color:var(--ink);font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif}aside{position:fixed;inset:0 auto 0 0;width:265px;padding:32px 22px;background:#142f43;color:white;overflow:auto}aside strong{display:block;font-size:24px;letter-spacing:-.5px}aside small{display:block;color:#a6bece;margin:4px 0 28px}aside a{display:block;color:#d8e6ef;text-decoration:none;padding:8px 12px;border-radius:8px;font-size:14px}aside a:hover{background:#29495f;color:white}main{margin-left:265px;padding:36px 5vw 80px;max-width:1450px}.chapter{background:white;border:1px solid var(--line);border-radius:18px;padding:30px 40px;margin-bottom:32px;box-shadow:0 3px 16px #16345005}h1{font-size:32px;line-height:1.4;margin:0 0 20px;letter-spacing:-.6px}h2{font-size:23px;margin-top:36px;padding-bottom:8px;border-bottom:1px solid var(--line)}h3{font-size:19px;margin-top:28px}a{color:#2363ba;text-underline-offset:3px}img{max-width:100%;height:auto;display:block;border-radius:12px;border:1px solid var(--line);margin:20px auto;cursor:zoom-in}table{width:100%;border-collapse:collapse;display:block;overflow-x:auto;font-size:14px;margin:20px 0}th,td{text-align:left;padding:11px 14px;border:1px solid var(--line);vertical-align:top}th{background:#edf3f8;color:#24475e}tr:nth-child(even){background:#f9fbfc}pre{overflow:auto;background:#142f43;color:#e0edf5;padding:20px;border-radius:12px;font-size:13px;line-height:1.65}code{font-family:Consolas,monospace;font-size:.9em}p code,td code,li code{background:#eef3f7;padding:2px 5px;border-radius:4px}blockquote{margin:18px 0;padding:5px 18px;border-left:4px solid #4583b9;background:#f0f6fb;color:#426177}li{margin:7px 0}dialog{padding:12px;border:0;border-radius:12px;max-width:96vw;max-height:96vh}dialog img{margin:0;max-height:87vh;max-width:92vw;cursor:zoom-out}dialog::backdrop{background:#102b43c9}dialog button{float:right;border:0;background:none;font-size:24px;cursor:pointer}@media(max-width:850px){aside{position:static;width:auto;padding:22px}aside small{margin-bottom:10px}aside nav{display:flex;flex-wrap:wrap}aside a{font-size:13px}main{margin:0;padding:18px 12px}.chapter{padding:24px 18px}h1{font-size:27px}h2{font-size:21px}}@media print{aside{display:none}main{margin:0;padding:0}.chapter{border:0;box-shadow:none;page-break-before:always}img{max-height:500px;object-fit:contain}a{color:inherit}}
-</style><aside><strong>CineCircuit</strong><small>图文使用指南 · 2026.09</small><nav><a href="#home">CineCircuit 使用指南</a><a href="#01-features">功能概览</a><a href="#02-installation">部署与初始化</a><a href="#03-configuration">基础配置</a><a href="#04-storage">存储与账号</a><a href="#05-sources-downloaders">站点与下载器</a><a href="#06-subscriptions">搜索与订阅</a><a href="#07-organize-sync">整理与 STRM 同步</a><a href="#08-playback">媒体服务器与播放</a><a href="#09-operations">插件与运行管理</a><a href="#10-faq">常见问题</a></nav></aside><main><section id="home" class="chapter"><h1>CineCircuit 使用指南</h1>
+</style><aside><strong>CineCircuit</strong><small>图文使用指南 · 2026.09</small><nav><a href="#home">CineCircuit 使用指南</a><a href="#01-features">功能概览</a><a href="#02-installation">部署与初始化</a><a href="#03-configuration">基础配置</a><a href="#04-storage">存储与账号</a><a href="#05-sources-downloaders">站点与下载器</a><a href="#06-subscriptions">搜索与订阅</a><a href="#07-organize-sync">整理与 STRM 同步</a><a href="#08-playback">媒体服务器与播放</a><a href="#09-operations">插件与运行管理</a><a href="#10-faq">常见问题</a><a href="#11-disclaimer">许可说明与免责声明</a></nav></aside><main><section id="home" class="chapter"><h1>CineCircuit 使用指南</h1>
 <p><strong>从连接网盘到自动入库，一步步搭建自己的媒体工作流。</strong></p>
 <p>CineCircuit 是面向自建媒体库的自动化管理工具，将影视发现、资源订阅、下载与转存、媒体整理、元数据生成、STRM 同步和播放服务连接起来。</p>
 <p><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjUxMCIgdmlld0JveD0iMCAwIDEyMDAgNTEwIiByb2xlPSJpbWciPg0KPHRpdGxlPuS4gOadoeWujOaVtOeahOWqkuS9k+W3peS9nOa1gTwvdGl0bGU+PGRlc2M+5bey5pyJ572R55uY5aqS5L2T5pe277yM5Y+v5Lul5LuO56ysIDMg5q2l55qE5ZCM5q2l5byA5aeL44CCPC9kZXNjPg0KPGRlZnM+PG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSI4IiBtYXJrZXJIZWlnaHQ9IjgiIHJlZlg9IjYiIHJlZlk9IjQiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTTAsMCBMOCw0IEwwLDgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzYzODA5NCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz48L21hcmtlcj48L2RlZnM+DQo8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI1MTAiIHJ4PSIyNCIgZmlsbD0iI2VmZjRmOCIvPg0KPGcgZm9udC1mYW1pbHk9Ik1pY3Jvc29mdCBZYUhlaSwgUGluZ0ZhbmcgU0MsIHNhbnMtc2VyaWYiPg0KPHRleHQgeD0iNDUiIHk9IjYwIiBmaWxsPSIjMTMyZTQ0IiBmb250LXNpemU9IjI4IiBmb250LXdlaWdodD0iNzAwIj7kuIDmnaHlrozmlbTnmoTlqpLkvZPlt6XkvZzmtYE8L3RleHQ+DQo8dGV4dCB4PSI0NSIgeT0iOTYiIGZpbGw9IiM1ODcxODciIGZvbnQtc2l6ZT0iMTciPuW3suaciee9keebmOWqkuS9k+aXtu+8jOWPr+S7peS7juesrCAzIOatpeeahOWQjOatpeW8gOWni+OAgjwvdGV4dD4NCjxyZWN0IHg9IjQ1IiB5PSIxNDAiIHdpZHRoPSIyNTIiIGhlaWdodD0iMjQ1IiByeD0iMTgiIGZpbGw9IndoaXRlIiBzdHJva2U9IiNkY2U1ZWQiLz4NCjxyZWN0IHg9IjY1IiB5PSIxNjEiIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgcng9IjExIiBmaWxsPSIjMjg2YmZmIi8+DQo8dGV4dCB4PSI4MyIgeT0iMTg2IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSIyMCIgZm9udC13ZWlnaHQ9IjcwMCI+MTwvdGV4dD4NCjx0ZXh0IHg9IjY1IiB5PSIyMzIiIGZvbnQtc2l6ZT0iMjMiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiMxOTM5NGYiPuWPkeeOsOS4juiuoumYhTwvdGV4dD4NCjx0ZXh0IHg9IjY1IiB5PSIyNzQiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM0YTY1N2IiPuaQnOe0ouW9seinhui1hOaWmTwvdGV4dD4NCjx0ZXh0IHg9IjY1IiB5PSIzMDYiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM0YTY1N2IiPumAieaLqeadpea6kOWSjOetm+mAieinhOWImTwvdGV4dD4NCjx0ZXh0IHg9IjY1IiB5PSIzMzgiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM0YTY1N2IiPuaMgee7reWvu+aJvuebruagh+i1hOa6kDwvdGV4dD4NCjxwYXRoIGQ9Ik0zMDIsMjYzIEgzMjQiIHN0cm9rZT0iIzYzODA5NCIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIvPg0KPHJlY3QgeD0iMzMyIiB5PSIxNDAiIHdpZHRoPSIyNTIiIGhlaWdodD0iMjQ1IiByeD0iMTgiIGZpbGw9IndoaXRlIiBzdHJva2U9IiNkY2U1ZWQiLz4NCjxyZWN0IHg9IjM1MiIgeT0iMTYxIiB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHJ4PSIxMSIgZmlsbD0iIzQ3NzZiMSIvPg0KPHRleHQgeD0iMzcwIiB5PSIxODYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iNzAwIj4yPC90ZXh0Pg0KPHRleHQgeD0iMzUyIiB5PSIyMzIiIGZvbnQtc2l6ZT0iMjMiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiMxOTM5NGYiPuS4i+i9veS4jui9rOWtmDwvdGV4dD4NCjx0ZXh0IHg9IjM1MiIgeT0iMjc0IiBmb250LXNpemU9IjE2IiBmaWxsPSIjNGE2NTdiIj7mj5DkuqTnu5nkuIvovb3lmajmiJbnvZHnm5g8L3RleHQ+DQo8dGV4dCB4PSIzNTIiIHk9IjMwNiIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzRhNjU3YiI+5o6l5pS25Yiw5b6F5pW055CG55uu5b2VPC90ZXh0Pg0KPHRleHQgeD0iMzUyIiB5PSIzMzgiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM0YTY1N2IiPuehruiupOaWh+S7tuecn+ato+WujOaIkDwvdGV4dD4NCjxwYXRoIGQ9Ik01ODksMjYzIEg2MTEiIHN0cm9rZT0iIzYzODA5NCIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIvPg0KPHJlY3QgeD0iNjE5IiB5PSIxNDAiIHdpZHRoPSIyNTIiIGhlaWdodD0iMjQ1IiByeD0iMTgiIGZpbGw9IndoaXRlIiBzdHJva2U9IiNkY2U1ZWQiLz4NCjxyZWN0IHg9IjYzOSIgeT0iMTYxIiB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHJ4PSIxMSIgZmlsbD0iIzEzOGI4MCIvPg0KPHRleHQgeD0iNjU3IiB5PSIxODYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iNzAwIj4zPC90ZXh0Pg0KPHRleHQgeD0iNjM5IiB5PSIyMzIiIGZvbnQtc2l6ZT0iMjMiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiMxOTM5NGYiPuaVtOeQhuS4juWQjOatpTwvdGV4dD4NCjx0ZXh0IHg9IjYzOSIgeT0iMjc0IiBmb250LXNpemU9IjE2IiBmaWxsPSIjNGE2NTdiIj7or4bliKvjgIHliIbnsbvjgIHph43lkb3lkI08L3RleHQ+DQo8dGV4dCB4PSI2MzkiIHk9IjMwNiIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzRhNjU3YiI+55Sf5oiQIFNUUk0g5LiO5YWD5pWw5o2uPC90ZXh0Pg0KPHRleHQgeD0iNjM5IiB5PSIzMzgiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM0YTY1N2IiPuWIt+aWsOWqkuS9k+W6kzwvdGV4dD4NCjxwYXRoIGQ9Ik04NzYsMjYzIEg4OTgiIHN0cm9rZT0iIzYzODA5NCIgc3Ryb2tlLXdpZHRoPSIyIiBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSIvPg0KPHJlY3QgeD0iOTA2IiB5PSIxNDAiIHdpZHRoPSIyNTIiIGhlaWdodD0iMjQ1IiByeD0iMTgiIGZpbGw9IndoaXRlIiBzdHJva2U9IiNkY2U1ZWQiLz4NCjxyZWN0IHg9IjkyNiIgeT0iMTYxIiB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHJ4PSIxMSIgZmlsbD0iIzgwNjBiOCIvPg0KPHRleHQgeD0iOTQ0IiB5PSIxODYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIiBmb250LXNpemU9IjIwIiBmb250LXdlaWdodD0iNzAwIj40PC90ZXh0Pg0KPHRleHQgeD0iOTI2IiB5PSIyMzIiIGZvbnQtc2l6ZT0iMjMiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiMxOTM5NGYiPuWFpeW6k+S4juaSreaUvjwvdGV4dD4NCjx0ZXh0IHg9IjkyNiIgeT0iMjc0IiBmb250LXNpemU9IjE2IiBmaWxsPSIjNGE2NTdiIj7lqpLkvZPmnI3liqHlmajmiavmj488L3RleHQ+DQo8dGV4dCB4PSI5MjYiIHk9IjMwNiIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzRhNjU3YiI+5a6i5oi356uv5Y+R6LW35pKt5pS+PC90ZXh0Pg0KPHRleHQgeD0iOTI2IiB5PSIzMzgiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiM0YTY1N2IiPuino+aekOe9keebmOWcsOWdgOaIluS7o+eQhjwvdGV4dD4NCjx0ZXh0IHg9IjQ1IiB5PSI0NDIiIGZpbGw9IiMyNDRhNjciIGZvbnQtc2l6ZT0iMTgiPuWFiOeUqOWwkemHj+WqkuS9k+i3kemAmuS4gOasoe+8jOWGjeW8gOWQr+iHquWKqOebkeaOp+OAgeiuoumYheWSjOWumuaXtuWQjOatpeOAgjwvdGV4dD4NCjx0ZXh0IHg9IjQ1IiB5PSI0NzciIGZpbGw9IiM2ODgwOTMiIGZvbnQtc2l6ZT0iMTQiPkNpbmVDaXJjdWl0IMK3IOS9v+eUqOaMh+WNlyDCtyDnpLrmhI/lm748L3RleHQ+DQo8L2c+PC9zdmc+" alt="CineCircuit 的媒体处理流程" /></p>
@@ -54,6 +54,10 @@
 <td>配置不生效、任务失败、无法播放</td>
 <td><a href="#10-faq">常见问题</a></td>
 </tr>
+<tr>
+<td>了解使用责任、许可与风险</td>
+<td><a href="#11-disclaimer">许可说明与免责声明</a></td>
+</tr>
 </tbody>
 </table>
 <h2>第一次使用，建议走这条路线</h2>
@@ -72,7 +76,15 @@
 <li>文档内的域名、IP、目录和影视名称都是示例，使用时应替换。</li>
 <li>本仓库维护 CineCircuit 的公开使用文档，包含 Markdown 和配图；阅读不依赖私有源码仓库。</li>
 </ul>
-<p>本项目不提供影视内容。请使用自己有权访问、管理和播放的媒体。</p>
+<h2>许可说明与免责声明</h2>
+<p>CineCircuit 用于自建媒体库管理与流程自动化。本项目不提供影视内容，也不授予访问、下载、复制、传播第三方内容的权利。使用前请阅读<a href="#11-disclaimer">完整许可说明与免责声明</a>。</p>
+<ul>
+<li>**合法使用与账号授权：**使用者应具备相应内容与账号的使用权限，遵守适用法律及相关服务条款。软件功能不替代会员、付费服务或内容授权，也不构成绕过访问控制的许可。</li>
+<li>**数据来源与第三方服务：**媒体、字幕、元数据、图片和播放地址可能来自使用者配置的存储与第三方服务；其合法性、准确性、完整性和持续可用性需按实际来源核实。接口、账号权益和服务规则变化可能导致功能中断。</li>
+<li>**自动化与数据风险：**下载、移动、重命名、覆盖、删除、回收站清理、同步和元数据修改可能改变或丢失数据，并消耗带宽、空间与付费额度。启用前应核对配置，先用少量文件验证，并保留可恢复的备份。</li>
+<li>**第三方插件与凭据：**插件可能在服务器进程及浏览器页面中执行代码。权限清单不等于独立沙箱；安装前应核实来源，妥善保护密码、Cookie、令牌、日志和备份。</li>
+<li>**担保、责任与许可：**除适用法律要求或另有有效书面约定外，软件按“原样”和“可用状态”提供，不保证无错误、不中断或符合特定需求。责任限制以适用法律和各组件许可证为准，不排除依法不得排除的责任。插件仓库自有代码的 GPL-3.0-only 许可及第三方组件各自的许可继续有效，本声明不增加与其冲突的使用、修改或分发限制。</li>
+</ul>
 </section>
 <section id="01-features" class="chapter"><h1>功能概览</h1>
 <p><a href="#home">返回首页</a></p>
@@ -1023,4 +1035,60 @@ docker compose logs --tail=100 cinecircuit
 <li>去除凭据的日志片段或截图。</li>
 </ul>
 <p>不要提交真实配置目录、数据库、账号密码、Cookie、API Key、完整私有 RSS 或带签名的播放链接。</p>
+</section>
+<section id="11-disclaimer" class="chapter"><h1>许可说明与免责声明</h1>
+<p><a href="#home">返回首页</a></p>
+<p>更新日期：2026 年 9 月 15 日。</p>
+<p>本说明适用于 CineCircuit 的使用文档及其所描述的媒体管理、自动化和插件使用场景。主程序、独立插件、第三方代码和资源分别受其适用许可证及有效约定约束；本说明不替代这些文件，也不对项目无权授权的内容授予任何权利。</p>
+<h2>1. 项目性质与用途</h2>
+<p>CineCircuit 是面向自建媒体库的管理与自动化工具，可按使用者配置连接存储、资源来源、下载器、元数据服务和媒体服务器，执行订阅、下载或转存、整理、同步及播放相关操作。</p>
+<p>本项目不经营或提供影视内容库，不出售第三方内容访问权，也不因提供接口接入能力而代表相关平台作出授权、合作或可用性承诺。软件具备某项技术功能，不表示该功能在任何账号、地区、服务或使用场景下都被允许。</p>
+<p>本项目不提供绕过付费、会员权益、身份认证、访问控制或内容保护措施的授权。相关功能需要的账号、会员、API 权限、存储容量或其他付费服务，应由使用者按对应服务要求自行取得。</p>
+<h2>2. 合法使用与内容权利</h2>
+<p>使用者应遵守适用法律法规及相关服务条款，并确保对所访问、下载、存储、复制、整理、播放或传播的内容拥有必要权利或合法授权。</p>
+<p>不得利用本项目实施侵权传播、未经授权访问他人账号或数据、窃取凭据、破坏服务、规避合法访问限制或其他违法活动。公开分享链接、搜索结果、字幕或图片能够被获取，并不当然意味着可以自由复制、再分发或用于商业用途。</p>
+<p>使用者应对自身配置、提交的任务、处理的内容以及向其他用户提供服务的行为依法承担相应责任。任何一方依法应承担的责任，不因本说明而转移或消除。</p>
+<h2>3. 数据来源与信息准确性</h2>
+<p>应用处理的数据可能来自使用者的本地文件、网盘、已配置的资源来源、媒体服务器及第三方接口，包括影视资料、字幕、封面、演员信息、文件属性和播放地址等。</p>
+<p>开发者无法逐项审核这些内容的权属、合法性、准确性、完整性、安全性或时效性。搜索结果、自动匹配、元数据识别和文件分类可能存在错误、遗漏或同名混淆，不能作为内容授权、版权归属或文件安全性的证明。</p>
+<p>使用者应在下载、覆盖、整理或传播前核对目标内容。发现识别错误、异常文件或不符合授权范围的内容时，应暂停相关任务并修正配置或移除内容。</p>
+<h2>4. 第三方服务、账号与费用</h2>
+<p>第三方服务可能调整接口、域名、认证方式、风控规则、请求频率、会员权益、价格或开放范围，也可能中断或停止服务。这些变化可能导致登录失效、搜索无结果、下载或转存失败、同步不完整及播放中断。</p>
+<p>自动化请求可能触发验证码、限流、账号审查、功能限制或其他平台处理。使用者应根据服务规则设置任务频率和并发，并自行管理账号权益及使用额度。</p>
+<p>下载、上传、跨账号或跨网盘复制、代理播放和重试任务可能消耗网络流量、服务器带宽、临时磁盘、云存储空间及收费接口额度。“秒传”“直链”或“STRM”不代表所有流程都不占用服务器资源或不产生费用。</p>
+<p>项目不承诺第三方服务永久免费、账号不受限制、接口持续兼容或资源永久可用。账号申诉、退款或服务争议应按相关平台规则处理；这不影响各方依法或依有效约定承担的责任。</p>
+<h2>5. 自动化操作与数据损失风险</h2>
+<p>应用及已启用插件可能自动执行下载、上传、移动、重命名、覆盖、删除、回收站清理、目录扫描、STRM 清理、媒体库刷新及元数据修改。部分操作会改变原文件位置、替换现有资料，或造成无法恢复的删除。</p>
+<p>配置错误、识别错误、路径映射不一致、权限不足、网络中断、磁盘故障、并发冲突、上游异常或程序缺陷，都可能导致任务失败、重复处理、数据不一致或丢失。</p>
+<p>使用者应当：</p>
+<ol>
+<li>核对来源与目标目录、账号、容器挂载、覆盖策略、删除范围和任务触发条件。</li>
+<li>先在独立测试目录中使用少量文件验证结果，再启用批量处理和自动监控。</li>
+<li>对重要媒体、配置、数据库及必要的插件版本包保留独立、可恢复的备份。</li>
+<li>在远端状态不确定时检查原任务与目标文件，避免盲目重复提交。</li>
+<li>更新前确认备份与回退方案；更新后检查目录访问、任务结果和播放情况。</li>
+</ol>
+<p>STRM 是播放链接文件，不包含原视频，不能替代原媒体备份。同步目录也不等同于独立备份，尤其是在启用了覆盖和清理功能时。</p>
+<h2>6. 凭据、隐私与部署安全</h2>
+<p>应用和插件可能需要处理密码、Cookie、API Key、访问令牌、分享链接及其他认证信息。不同功能还可能向所配置的第三方服务发送搜索关键词、媒体标识、文件信息或操作请求。</p>
+<p>使用者应了解所启用功能与第三方服务的数据处理方式，合理控制访问权限和公开入口，保护服务器、配置目录、数据库、运行日志及备份。凭据加密或界面脱敏不能消除服务器被入侵、管理员访问或恶意插件读取数据的风险。</p>
+<p>公开反馈前应去除密码、Cookie、令牌、完整私有 RSS、带签名播放链接及其他可识别个人或账号的信息。发现泄露后应及时撤销或更换相关凭据，并检查异常访问。</p>
+<p>本说明不构成“绝不收集数据”“所有数据均不出服务器”或“绝对安全”的保证。实际数据流取决于所使用版本、启用功能、安装插件和部署配置。</p>
+<h2>7. 独立插件与第三方代码</h2>
+<p>独立插件由各自维护者发布和维护，版本、质量、兼容性、依赖与支持范围可能不同。安装前应核实发布来源、版本、校验信息及所需权限，并阅读插件说明。</p>
+<p>当前插件机制不应被视为独立安全沙箱。插件后端代码可能在服务器进程中运行并访问文件、环境变量、数据库和网络；插件前端代码可能在应用同源页面中执行并接触页面数据与会话。清单权限、校验摘要和审计记录不能单独证明代码安全，也不能保证第三方代码无法越权访问宿主资源。</p>
+<p>仅安装和启用可信来源的插件。停用或卸载插件不一定自动撤销它已发起的远端操作，也不一定恢复其已修改或删除的数据。第三方作者、主程序维护者和部署者的责任，应依各自行为、适用法律、许可证及有效约定确定。</p>
+<h2>8. 软件担保与责任限制</h2>
+<p>除适用法律要求或另有有效书面约定外，软件、插件及文档按“原样”和“可用状态”提供。在法律允许的范围内，开发者、版权持有人及贡献者不提供明示或默示担保，包括适销性、特定用途适用性，以及无错误、不中断、持续兼容、结果完整或安全无漏洞的保证。</p>
+<p>在适用法律和相应许可证允许的范围内，相关责任限制可涵盖因使用或无法使用软件导致的数据丢失或不准确、服务中断、与其他系统不兼容，以及由此产生的其他损失。对于适用 GPL-3.0-only 的代码，免责与责任限制以该许可证第 15、16 条及适用法律为准；存在有效书面担保或其他有效约定时，还应按其内容处理。</p>
+<p>本说明不排除或限制依法不得排除或限制的责任。例如，在适用中华人民共和国法律的情形下，应遵守有关人身损害及因故意、重大过失造成财产损失的免责限制。具体责任仍需结合事实和适用法律确定。<a href="https://www.court.gov.cn/zixun/xiangqing/233181.html">相关依据：《中华人民共和国民法典》第五百零六条</a>。</p>
+<h2>9. 开源许可、商业使用与第三方资源</h2>
+<p><a href="https://github.com/misthanl/cinecircuit-plugins">CineCircuit 插件仓库</a>有权授权的自有代码采用 <strong>GNU General Public License v3.0 only（GPL-3.0-only）</strong>，仅适用第 3 版。完整条款见该仓库的 <a href="https://github.com/misthanl/cinecircuit-plugins/blob/main/LICENSE">LICENSE</a>，适用范围见 <a href="https://github.com/misthanl/cinecircuit-plugins/blob/main/LICENSE_SCOPE.md">LICENSE_SCOPE.md</a>。</p>
+<p>本说明不改变上述许可，不增加“仅限非商业用途”等与其授予权利冲突的限制。对适用 GPL 的代码进行使用、修改或分发时，应遵守其具体条件；商业使用仍须另行满足内容权利、第三方服务条款及其他适用要求。</p>
+<p>第三方代码、字体、图片、字幕、商标和其他资源保留各自权利归属与许可条件，不因被引用、展示或包含于项目中而自动适用插件代码的许可。项目不对未取得授权的资源授予额外权利；再分发前应核实其授权，并保留需要的许可证、署名和 NOTICE。</p>
+<p>插件许可不自动适用于主程序、其他插件或整个文档仓库。公开使用文档也不意味着私有主程序源码因此公开或获得某项开源授权；相应软件和材料的权利范围以其实际许可及有效授权为准。</p>
+<h2>10. 文档更新与问题反馈</h2>
+<p>文档中的界面、示例配置、功能范围和限制依据编写时的版本整理。后续版本及外部服务变化可能使部分说明不再适用；演示截图不代表实际账号已授权、任务已完成或兼容性已经得到全面验证。</p>
+<p>使用前请阅读对应版本说明与相关许可。发现文档错误、疑似侵权内容或安全问题时，可通过<a href="https://github.com/misthanl/cinecircuit-docs/issues">文档仓库的 Issues</a>提供去除敏感信息的说明、涉及页面及必要依据；不要在公开问题中提交凭据、个人信息或可直接利用的敏感细节。</p>
+<p>本说明的更新不当然追溯改变既有许可、有效约定或依法产生的权利义务。个别表述依法不适用时，不据此排除其他有效条款或适用法律的效力。</p>
 </section></main><dialog id="image-preview"><button aria-label="关闭图片" onclick="this.closest('dialog').close()">×</button><img alt="放大查看文档图片"></dialog><script>const d=document.getElementById('image-preview');document.querySelectorAll('main img').forEach(i=>i.addEventListener('click',()=>{d.querySelector('img').src=i.src;d.showModal()}));d.addEventListener('click',e=>{if(e.target===d||e.target.tagName==='IMG')d.close()});</script></html>
