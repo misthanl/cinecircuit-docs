@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="510" viewBox="0 0 1200 510" role="img">
+<title>同一份文件，在三个环境中的路径</title><desc>以 NAS 的 STRM 目录共享给 CineCircuit 和媒体服务器为例。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#638094" stroke-width="1.5"/></marker></defs>
+<rect width="1200" height="510" rx="24" fill="#eff4f8"/>
+<g font-family="Microsoft YaHei, PingFang SC, sans-serif">
+<text x="45" y="60" fill="#132e44" font-size="28" font-weight="700">同一份文件，在三个环境中的路径</text>
+<text x="45" y="96" fill="#587187" font-size="17">以 NAS 的 STRM 目录共享给 CineCircuit 和媒体服务器为例。</text>
+<rect x="45" y="140" width="340" height="245" rx="18" fill="white" stroke="#dce5ed"/>
+<rect x="65" y="161" width="36" height="36" rx="11" fill="#286bff"/>
+<text x="83" y="186" text-anchor="middle" fill="white" font-size="20" font-weight="700">1</text>
+<text x="65" y="232" font-size="23" font-weight="700" fill="#19394f">NAS / 宿主机</text>
+<text x="65" y="274" font-size="16" fill="#4a657b">/srv/cinecircuit/media/strm</text>
+<text x="65" y="306" font-size="16" fill="#4a657b">真实保存文件的位置</text>
+<text x="65" y="338" font-size="16" fill="#4a657b">长期保留并按需备份</text>
+<path d="M390,263 H412" stroke="#638094" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="420" y="140" width="340" height="245" rx="18" fill="white" stroke="#dce5ed"/>
+<rect x="440" y="161" width="36" height="36" rx="11" fill="#138b80"/>
+<text x="458" y="186" text-anchor="middle" fill="white" font-size="20" font-weight="700">2</text>
+<text x="440" y="232" font-size="23" font-weight="700" fill="#19394f">CineCircuit 容器</text>
+<text x="440" y="274" font-size="16" fill="#4a657b">/media/strm</text>
+<text x="440" y="306" font-size="16" fill="#4a657b">应用中填写的 STRM 输出目录</text>
+<text x="440" y="338" font-size="16" fill="#4a657b">来自 media → /media 的挂载</text>
+<path d="M765,263 H787" stroke="#638094" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="795" y="140" width="340" height="245" rx="18" fill="white" stroke="#dce5ed"/>
+<rect x="815" y="161" width="36" height="36" rx="11" fill="#8060b8"/>
+<text x="833" y="186" text-anchor="middle" fill="white" font-size="20" font-weight="700">3</text>
+<text x="815" y="232" font-size="23" font-weight="700" fill="#19394f">媒体服务器容器</text>
+<text x="815" y="274" font-size="16" fill="#4a657b">/library</text>
+<text x="815" y="306" font-size="16" fill="#4a657b">媒体库扫描时选择的路径</text>
+<text x="815" y="338" font-size="16" fill="#4a657b">单独挂载同一宿主机 strm 目录</text>
+<text x="45" y="442" fill="#244a67" font-size="18">三个名字可以不同，但必须指向同一份实际文件；网盘目录另用目录选择器指定。</text>
+<text x="45" y="477" fill="#688093" font-size="14">CineCircuit · 使用指南 · 示意图</text>
+</g></svg>
