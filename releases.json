@@ -2,6 +2,17 @@
   "schema_version": 1,
   "releases": [
     {
+      "version": "v1.4.9.1",
+      "date": "2026-11-18",
+      "title": "豆瓣搜索海报清晰度修复",
+      "added": [],
+      "improved": [],
+      "fixed": [
+        "修复豆瓣搜索结果中的部分海报放大后模糊的问题。"
+      ],
+      "notes": []
+    },
+    {
       "version": "v1.4.9",
       "date": "2026-11-17",
       "title": "媒体匹配与日志显示优化",
